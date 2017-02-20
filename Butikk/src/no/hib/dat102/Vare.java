@@ -3,6 +3,7 @@ package no.hib.dat102;
 import java.util.Scanner;
 
 /**
+ * Dette er klasse for vare.
  * 
  * @author kanen
  *
@@ -69,22 +70,22 @@ public class Vare {
 		this.varePris = varePris;
 	}
 
-	
 	/**
 	 * Leser inn informasjon om pris og navn fra bruker
+	 * 
 	 * @param vareNr
 	 */
 	public void lesVare(int vareNr) {
-		
+
 		System.out.println("Oppgi navn på varen: ");
 
 		setVareNavn(tast.next());
-		
+
 		System.out.println("Oppgi varens pris: ");
-		
+
 		double pris = tast.nextDouble();
-		
-		if(pris < 0){
+
+		if (pris < 0) {
 			System.out.println("Vennligst oppgi en posistiv verdi!");
 		} else {
 			setVarePris(pris);
